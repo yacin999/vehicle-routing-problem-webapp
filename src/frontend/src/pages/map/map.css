@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3
+}
+
+.menu-icon {
+    position: absolute;
+    top : 30px;
+    left: 30px;
+    z-index: 2;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgb(0, 10, 29);
+    color: #FFF;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .1s ease-in;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.panel .panel-popup {
+    position: relative;
+    background-color: #FFF;
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.panel .panel-popup .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(229, 0, 0);
+    transition: all .1s ease-in;
+}
+
+.panel .panel-popup .close-icon:hover {
+    color: #333;
+    transform: scale(1.1);
+}
+
+
+.admin-panel-link {
+    position: absolute;
+    top : 10px;
+    right: 60px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #0063bb;
+    padding : 4px 8px; 
+}
+
+.panel-content {
+    height: 100%;
+}
+
+.panel-content .panel-tabs {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.panel-content .panel-tabs > li {
+    padding: 5px 10px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+}
+
+/* .panel-content .panel-tabs > li.hovered:hover {
+    border-bottom: 4px solid rgb(209, 228, 253); 
+    box-sizing: content-box;
+} */
+
+.customers > p{
+    border-bottom: 2px solid rgb(20, 0, 130);
+    font-size: 20;
+}
+
+.content {
+    height: calc(100% - 56px);
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+
+
+table {
+    border: 1px solid #CCC;
+    width: 100%;
+    border-collapse: collapse;
+    /* height: 200px; */
+}
+
+thead {
+    background-color: #04aa6d;
+    color: #FFF;
+}
+
+thead > tr > td {
+    padding: 10px;
+}
+
+/* th {
+    border-bottom: 1px solid black;
+} */
+
+td {
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    padding: 20px;
+}
+
+
+.marker {
+    width: 30px;
+    height: 30px;
+    /* padding: 50px; */
+    background-color: rgb(0, 235, 82);
+    border: 2px solid #000;
+    border-radius: 50%;
+} 
+
+.depo-marker {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+
+
+.add-driver-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #04aa6d;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* ============= add delivery tab style =============== */
+
+.add-delivery-container {
+    padding: 0 20px;
+}
+
+.add-delivery-container > p {
+    font-size: 20px;
+    color: #333;
+}
+
+.upper-inputs {
+    margin-top: 20px;
+    display: flex;
+}
+
+.upper-inputs input {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 2px solid #1ab17a;
+}
+
+.upper-inputs input:first-of-type {
+    margin-right: 5px;
+}
+
+.upper-inputs input:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-container > label {
+    font-size: 15px;
+    color: #04aa6d;
+    margin-bottom: 5px;
+}
+
+.depo-input {
+    margin-right: 200px;
+}
+
+.depo-input > div {
+    display: flex;
+    align-items: center;
+}
+
+.depo-input > div > input {
+    width: 100px
+}
+
+
+.add-delivery-container > form .clients-label {
+    color: #04aa6d;
+    font-size: 15px;
+}
+
+.clients-container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.clients-container .available {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-container .available > span {
+    padding: 3px;
+    background-color: #ddd;
+    padding: 3px 7px;
+}
+
+.clients-container .clients-btns {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-container .clients-btns .icon {
+    color: #FFF;
+    background: #1ab17a;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 55px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.clients-container .clients-btns .icon:first-child {
+    margin-bottom: 6px;
+}
+
+.clients-container .selected {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-container .selected > span {
+    padding: 3px;
+    background-color: #ddd;
+    padding: 3px 7px;
+}
+
+.clients-container select {
+    height: 100%;
+    font-size: 18px;
+}
+
+.add-delivery-container form input[type=submit] {
+    float: right;
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #FFF;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* confirm submit delivery popup */
+.confirm-submit-delivery-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.confirm-submit-delivery-popup {
+    background-color: #FFF;
+    position: absolute;
+    top : 40%;
+    left: 50%;
+    z-index: 3;
+    padding: 20px;
+    transform: translate(-50%);
+}
+.confirm-submit-delivery-popup > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-submit-delivery-popup > p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.confirm-submit-delivery-popup  button {
+    padding: 12px 20px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.confirm-submit-delivery-popup  button.confirm {
+    background-color: #04aa6d;
+}
+
+.confirm-submit-delivery-popup  button.cancel {
+    background-color: #333;
+}
+
+
+
+/* ============= routes detail tab style =============== */
+
+.routes-detail {
+    height: 100%;
+}
+
+.customer-card {
+    background-color: #cbe2ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #001d42;
+}
+
+
+
+
+
